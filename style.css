@@ -159,7 +159,7 @@ nav li {
         background: #4A5A5A;
         position: relative;
         margin: 10px;
-        width: 35%;
+        width: 215px;
         height: 5px;
         line-height: 8px;
         font-size: 13px;
@@ -189,6 +189,10 @@ nav li {
            object-fit: cover;
        }
 
-       
 
+
+/* Eating and Sleeping bottom section */
+
+.content-eating {
     
+}
