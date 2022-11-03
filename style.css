@@ -73,6 +73,7 @@ nav li {
 .content-hero {
     height: 50vh;
     background-image:url(images/Hero\ Image\ \(2\).jpg) ;
+    z-index:0;
     color: white;
     background-size: cover;
     position: relative;
@@ -102,11 +103,14 @@ nav li {
     .container-card {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2em;
-        background: #639D9D;
+        gap: 1em;
         font-family: sans-serif; 
         margin: 20px;
       }
+
+    .card {
+        background: #4A5A5A;
+    }
 
       .card h3 {
         margin: 15px;
@@ -117,3 +121,74 @@ nav li {
           height: 300px;
           object-fit: cover;
       }
+
+
+       /* events section */
+.events {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+/* events header and paragraph */
+       .line {
+        margin-top: 28px;
+           width: 60%;
+           border-top: solid 3px #639D9D;
+       }
+       .events-content {
+           width: 40%;
+           padding-right: 50px;
+       }
+       .events h1 {
+        color: black;
+        margin-right: 20px;
+        margin-bottom: 1em;
+       }
+
+       .events p {
+           color: black;
+           font-size: 16px;
+           line-height: 25px;
+       }
+
+/* event date and small cards */
+       .events-title {
+        padding: 1.5em;
+        background: #4A5A5A;
+        position: relative;
+        margin: 10px;
+        width: 35%;
+        height: 5px;
+        line-height: 8px;
+        font-size: 13px;
+    }
+
+       .container-events {
+        display: flex;
+        margin: 10px;
+        
+    }
+
+    .container-events h2 {
+        color: black;
+        background:rgba(255,255,255, .3);
+    }
+
+       .events-card {
+            margin: 10px;
+           object-fit: cover;
+           background:white;
+            color: black;
+            column-gap: 10px;
+       }
+
+       .events-card img {
+           width:100%;
+           object-fit: cover;
+       }
+
+       
+
+    
