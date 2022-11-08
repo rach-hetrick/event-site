@@ -5,10 +5,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-
+    /* basic format / style */
 body {
     color:white;
 }
+
+button {
+    padding: 10px 15px;
+    margin: 15px;
+    border: none;
+    background: #639D9D;
+    color: white;
+  }
+
+button:hover {
+    border: solid 2pt #639D9D;
+    background: white;
+    color: #639D9D;
+}
+
+    /* navigation */
 
 .top-nav {
     background: #639D9D;
@@ -82,6 +98,7 @@ nav li {
 .hero-title {
     padding: 1.5em;
     background: rgba(255,255,255, .3);
+    color: black;
     position: absolute;
     top: 50%;
     left: 150px;
@@ -194,5 +211,57 @@ nav li {
 /* Eating and Sleeping bottom section */
 
 .content-eating {
-    
+    height: 50vh;
+    background-image:url(images/eat-sleep-background.jpg) ;
+    z-index:0;
+    color: white;
+    background-size: cover;
+    position: relative;
+    margin-top: 75px;
 }
+
+.eating-title {
+    padding: 1.5em;
+    background: rgba(0,0,0, .6);
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    width: 40%;
+    padding-right: 50px;
+}
+
+.eating p {
+    position: absolute;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #4A5A5A;
+    text-align: center;
+    padding: 1em;
+
+}
+
+
+.footer-id {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer img {
+    height: 60px;
+}
+
+
