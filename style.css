@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
+@media (min-width: 800px)
+
     /* basic format / style */
 body {
     color:white;
@@ -14,14 +16,16 @@ body {
 button {
     padding: 10px 15px;
     margin: 15px;
-    border: none;
+    border: 2pt solid #639D9D;
     background: #639D9D;
     color: white;
     font-weight: bold;
   }
 
 button:hover {
-    border: solid 2pt #639D9D;
+    padding: 10px 15px;
+    margin: 15px;
+    border: 2pt solid #639D9D;
     background: white;
     color: #639D9D;
 }
@@ -35,6 +39,7 @@ button:hover {
     padding: .3em;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .navigation {
@@ -55,15 +60,25 @@ nav ul {
     margin: 2em;
       }
 
+
+
 nav li {
     margin-left: 3em;
     list-style-type: none;
       }
+
+nav li:hover {
+    color: #FEF1C1;
+    }
       
 .top-social i {
     font-size: 2em;
     color: white;
     margin: 5px;
+}
+
+.top-social i:hover {
+    color: #FEF1C1;
 }
 
 .nav-toggle {
@@ -141,6 +156,19 @@ nav li {
           object-fit: cover;
       }
 
+  /* media quereies for artist cards */
+      @media (max-width: 800px) {
+        .container-card {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container-card {
+          display: block;
+        }
+      }
+
 
        /* events section */
 .events {
@@ -182,12 +210,13 @@ nav li {
         height: 5px;
         line-height: 8px;
         font-size: 13px;
+        z-index: 0;
     }
 
        .container-events {
         display: flex;
+        flex: 25%;
         margin: 10px;
-        
     }
 
     .container-events h2 {
@@ -204,9 +233,37 @@ nav li {
        }
 
        .events-card img {
-           width:100%;
-           object-fit: cover;
+            width:100%;
+           object-fit:cover;
        }
+
+/* events cards media queries */
+
+       @media screen and (max-width: 800px) {
+        .container-events {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 50%;
+            margin: 10px;
+        }
+
+        .events-title {
+            padding: 1.5em;
+        }
+      }
+
+       @media screen and (max-width: 600px) {
+        .container-events {
+        flex-direction: column;
+        column-gap: 20px;
+        row-gap: 100px;
+        margin: 38px;
+        }
+
+        .events-title {
+            padding: 1.5em;
+        }
+      }
 
 
 
