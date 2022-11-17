@@ -5,13 +5,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-@media (min-width: 800px)
+
 
     /* basic format / style */
+
 body {
-    color:white;
-    font-family: 'Raleway', sans-serif;
-}
+        color:white;
+        font-family: 'Raleway', sans-serif;
+    }
 
 button {
     padding: 10px 15px;
@@ -54,13 +55,16 @@ button:hover {
       }
 
 nav ul {
-    color: white; 
+    
     display: flex;
     justify-content: center; 
     margin: 2em;
       }
 
-
+nav a {
+    color: white; 
+    text-decoration: none;
+}
 
 nav li {
     margin-left: 3em;
@@ -142,15 +146,15 @@ nav li:hover {
         margin: 20px;
       }
 
-    .card {
+    .artist-card {
         background: #4A5A5A;
     }
 
-      .card h3 {
+    .artist-card h3 {
         margin: 15px;
       }
 
-      .card img {
+      .artist-card img {
           width: 100%;
           height: 300px;
           object-fit: cover;
@@ -215,6 +219,7 @@ nav li:hover {
 
        .container-events {
         display: flex;
+        justify-content: center;
         flex: 25%;
         margin: 10px;
     }
@@ -294,6 +299,77 @@ nav li:hover {
     font-size: 16px;
     line-height: 25px;
 }
+
+
+
+/* ARTISTS PAGE */
+
+/* hero content */
+
+.content-hero-artists {
+    height: 60vh;
+    background-image:url(images/featured-artists-hero\ \(1\).jpg) ;
+    z-index:0;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    padding: 1.5em;
+    background: rgba(255,255,255, .3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+
+ 
+/* artist bios and cards */
+
+
+/* LINO */
+.container-images {
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .container-images div {
+      flex: 1;
+  }
+  
+ 
+  .card {
+    background: #4A5A5A;
+    padding: 2em;
+    line-height: 1.3em;
+  }
+
+.card-image div {
+    height: 50%;
+}
+
+.card-image div:first-child {
+    padding-bottom: 1em;
+}
+
+  .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+  }
+
+
+  /* MILO */
+
+  
+
+
+
+
 
 
 /* Footer */
