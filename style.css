@@ -58,20 +58,20 @@ nav ul {
     
     display: flex;
     justify-content: center; 
-    margin: 2em;
+    margin: 1.5em;
       }
 
 nav a {
     color: white; 
     text-decoration: none;
+    margin-left: 3em;
 }
 
 nav li {
-    margin-left: 3em;
     list-style-type: none;
       }
 
-nav li:hover {
+nav a:hover {
     color: #FEF1C1;
     }
       
@@ -366,6 +366,77 @@ nav li:hover {
   /* MILO */
 
   
+
+
+
+
+/* EATING & SLEEPING PAGE */
+
+/* hero content */
+
+.content-hero-eating {
+    height: 60vh;
+    background-image:url(images/eat-sleep-hero.jpg) ;
+    z-index:0;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    padding: 1.5em;
+    background: rgba(255,255,255, .3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+
+/* VOLUNTEER PAGE */
+
+/* hero content */
+
+.content-hero-volunteer {
+    height: 60vh;
+    background-image:url(images/volunteer-hero.jpg) ;
+    z-index:0;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    padding: 1.5em;
+    background: rgba(255,255,255, .3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+
+
+/* FAQ PAGE */
+
+/* hero content */
+
+.content-hero-faq {
+    height: 60vh;
+    background-image:url(images/FAQ-hero.jpg) ;
+    z-index:0;
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-title {
+    padding: 1.5em;
+    background: rgba(255,255,255, .3);
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 150px;
+}
+
 
 
 
