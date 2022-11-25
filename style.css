@@ -392,6 +392,120 @@ nav a:hover {
     left: 150px;
 }
 
+
+/* hotels content */
+
+ .container-hotel {
+        max-width: 900px;
+        margin: auto;
+        overflow: auto;
+        padding: 2rem;
+      }
+
+
+  .hotel-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+  }
+
+  .hotel-info {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    color: black;
+  }
+
+  .card-hotel {
+    display: flex;
+    background: white;
+    margin-left: 2rem;
+    color: black;
+    padding: 2em;
+  }
+  
+  .card-hotel img {
+    width: 400px;
+    object-fit: cover;
+  }
+  
+  .card-hotel h3 {
+    margin-bottom: 2rem;
+  }
+  
+  
+  .card-hotel > div {
+    padding: 2rem;
+  }
+  
+  
+  .card-hotel a {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: .8rem 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  .card-hotel a:hover {
+    opacity: .6;
+  }
+  
+  
+  @media(max-width: 700px) {
+    .card-hotel {
+      display: block;
+    }
+  }
+
+/* food content */
+  .card-food {
+    display: flex;
+    background: white;
+    margin-left: 2rem;
+    color: black;
+    padding: 2em;
+  }
+  
+  .card-food img {
+    width: 400px;
+    object-fit: cover;
+  }
+  
+  .card-food h3 {
+    margin-bottom: 2rem;
+  }
+  
+  
+  .card-food > div {
+    padding: 2rem;
+  }
+  
+  
+  .card-food a {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: .8rem 1.8rem;
+    margin-top: 2rem;
+  }
+  
+  .card-food a:hover {
+    opacity: .6;
+  }
+  
+  
+  @media(max-width: 700px) {
+    .card-food {
+      display: block;
+    }
+  }
+  
+
+
+
+
+
 /* VOLUNTEER PAGE */
 
 /* hero content */
@@ -412,6 +526,19 @@ nav a:hover {
     position: absolute;
     top: 50%;
     left: 150px;
+}
+
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    overflow: auto;
+    padding: .5 5rem;
+}
+.intro p {
+    color: black;
+    width: 600px;
+
 }
 
 
