@@ -533,13 +533,58 @@ nav a:hover {
     max-width: 900px;
     margin: auto;
     overflow: auto;
-    padding: .5 5rem;
+    text-align: center;
+    margin-top: 2vh;
+    justify-content: center;
 }
 .intro p {
     color: black;
     width: 600px;
-
 }
+
+
+.form-container {
+    margin: 100px auto 0;
+    width: 700px;
+    display: flex;
+    filter: drop-shadow(5px 5px 0.25rem #999)
+  }
+
+  .form-content {
+    text-align: left;
+  }
+  
+  form {
+    width: 300px;
+    background: lightseagreen;
+    padding: 3em;
+  }
+  
+  form div {
+    margin: 15px;
+  }
+  
+  label {
+    line-height: 2.5;
+    font-size: .8em;
+  }
+  
+  form input {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    background: rgba(255,255,255,.75)
+  }
+  
+  .agree input {
+    width: auto;
+  }
+  
+ 
+
+
 
 
 /* FAQ PAGE */
