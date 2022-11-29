@@ -461,6 +461,7 @@ nav a:hover {
 /* food content */
   .card-food {
     display: flex;
+    flex-direction: row-reverse;
     background: white;
     margin-left: 2rem;
     color: black;
@@ -609,10 +610,33 @@ nav a:hover {
     left: 150px;
 }
 
+.questions {
+    color: black; 
+    margin: 200px;
+    margin-top: 50px;
+
+}
+
+.questions h3 {
+    line-height: 25px;
+    margin-top: 30px;
+    font-family: 'Raleway', sans-serif;
+}
 
 
+.faq-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
 
+.faq-card image {
+   padding: 55px;
+}
 
+.faq-card-content {
+    padding: 55px;
+}
 
 
 /* Footer */
