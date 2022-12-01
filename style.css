@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+
 * {
     padding: 0;
     margin:  0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
-
-
 
     /* basic format / style */
 
@@ -14,6 +13,11 @@ body {
         font-family: 'Raleway', sans-serif;
     }
 
+
+ h2 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+ }   
 button {
     padding: 10px 15px;
     margin: 15px;
@@ -120,6 +124,7 @@ nav a:hover {
     padding: 1.5em;
     background: rgba(255,255,255, .3);
     color: black;
+    font-family: 'Raleway', sans-serif;
     position: absolute;
     top: 50%;
     left: 150px;
@@ -142,7 +147,7 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1em;
-        font-family: sans-serif; 
+        /* font-family: sans-serif;  */
         margin: 20px;
       }
 
@@ -524,6 +529,7 @@ nav a:hover {
     padding: 1.5em;
     background: rgba(255,255,255, .3);
     color: black;
+    font-family: 'Raleway', sans-serif;
     position: absolute;
     top: 50%;
     left: 150px;
@@ -531,34 +537,34 @@ nav a:hover {
 
 
 .intro {
-    max-width: 900px;
-    margin: auto;
-    overflow: auto;
-    text-align: center;
-    margin-top: 2vh;
-    justify-content: center;
+    max-width: 700px;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
 }
 .intro p {
     color: black;
-    width: 600px;
 }
 
 
 .form-container {
-    margin: 100px auto 0;
     width: 700px;
+    margin: 0 auto ;
+    /* 
     display: flex;
-    filter: drop-shadow(5px 5px 0.25rem #999)
+    object-position: center;
+    justify-content: center; */
   }
 
   .form-content {
     text-align: left;
   }
   
-  form {
-    width: 300px;
+  .form {
+    /* width: 620px; */
     background: lightseagreen;
     padding: 3em;
+    /* justify-content: center; */
   }
   
   form div {
@@ -679,12 +685,12 @@ footer img {
     line-height: 3em;
 }
 
-form {
+/* form {
     width: 300px;
     background:white;
     color: #6e6e6e;
     padding: 3px;
-  }
+  } */
 
 .copyright p {
     text-align: center;
