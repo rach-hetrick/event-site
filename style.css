@@ -9,7 +9,7 @@
     /* basic format / style */
 
 body {
-        color:white;
+        color:black;
         font-family: 'Raleway', sans-serif;
     }
 
@@ -17,6 +17,7 @@ body {
  h2 {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    
  }   
 button {
     padding: 10px 15px;
@@ -69,6 +70,7 @@ nav a {
     color: white; 
     text-decoration: none;
     margin-left: 3em;
+    opacity: 0;
 }
 
 nav li {
@@ -102,19 +104,46 @@ nav a:hover {
     display: flex;
     align-items: center;
   }
+
+ 
+
+
   
   .nav-toggle-label span {
       font-size: 1.5em;
+      color: white;
     }
 
   .nav-toggle:checked ~ nav {
       transform: scale(1,1);
     }
 
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transform-origin: top;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
+ 
+
+  
+  
+    
     @media screen and (min-width: 600px) {
-      .nav-toggle-label {
-        display: none;
-      }
+        .nav-toggle-label {
+          display: none;
+        }
+        
+        nav a {
+          opacity: 1;
+          position: relative;
+          }
+          
+
+        }
+
+  
+       
 
 
     
@@ -124,7 +153,7 @@ nav a:hover {
     height: 75vh;
     background-image:url(images/Hero\ Image\ \(2\).jpg) ;
     z-index:0;
-    color: white;
+    color: black;
     background-size: cover;
     position: relative;
 }
@@ -143,6 +172,10 @@ nav a:hover {
 .hero-title h1 {
   text-transform: uppercase;
   font-size: 55px;
+}
+
+.hero-title h2 {
+  color: black;
 }
 
 @media screen and (min-width: 200px) {
@@ -180,6 +213,7 @@ nav a:hover {
 
     .artist-card h3 {
         margin: 15px;
+        color: white;
       }
 
       .artist-card img {
@@ -237,6 +271,7 @@ nav a:hover {
        .events-title {
         padding: 1.5em;
         background: #4A5A5A;
+        color: white;
         position: relative;
         margin: 10px;
         width: 255px;
@@ -375,6 +410,7 @@ nav a:hover {
  
   .card {
     background: #4A5A5A;
+    color: white;
     padding: 2em;
     line-height: 1.3em;
   }
@@ -401,8 +437,6 @@ nav a:hover {
     line-height: 40px;
   }
 
-
-  /* MILO */
 
   
 
@@ -715,8 +749,10 @@ nav a:hover {
 
 footer {
     background: #4A5A5A;
+    color: white;
     text-align: left;
     padding: 1em;
+    margin-top: 60px;
 
 }
 
