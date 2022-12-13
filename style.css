@@ -126,6 +126,7 @@ nav a:hover {
     
   }
 
+
  
 
   
@@ -135,13 +136,10 @@ nav a:hover {
         .nav-toggle-label {
           display: none;
         }
-        
-        nav a {
-          opacity: 1;
-          position: relative;
-          }
-          
 
+          
+          
+          
         }
 
   
