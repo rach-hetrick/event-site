@@ -70,7 +70,7 @@ nav a {
     color: white; 
     text-decoration: none;
     margin-left: 3em;
-    opacity: 0;
+    opacity: 1;
 }
 
 nav li {
@@ -437,8 +437,25 @@ nav a:hover {
     line-height: 40px;
   }
 
+  .container-images a {
+    display: flex;
+    padding: 10px 15px;
+    margin-top: 20px;
+    width: 90px;
+    border: 2pt solid #639D9D;
+    background: #639D9D;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-  
+  .container-images a:hover {
+    padding: 10px 15px;
+    margin-top: 20px;
+    border: 2pt solid #639D9D;
+    background: white;
+    color: #639D9D;
+}
 
 
 
