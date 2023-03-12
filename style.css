@@ -59,6 +59,16 @@ button:hover {
     z-index: 999;
       }
 
+.nav-title {
+  position: fixed;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 nav ul {
     
     display: flex;
@@ -303,6 +313,7 @@ nav a:hover {
 
        .events-card img {
             width:100%;
+            height: 172px;
            object-fit:cover;
        }
 
@@ -399,7 +410,6 @@ nav a:hover {
     margin: 40px auto;
     width: 80%;
     display: flex;
-    justify-content: center;
     gap: 1em;
   }
 
