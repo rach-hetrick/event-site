@@ -195,7 +195,7 @@ nav a:hover {
     background-size: cover;
     position: relative;
   }
-
+}
 
 /*
 .container-hero {
@@ -474,8 +474,33 @@ nav a:hover {
     color: #639D9D;
 }
 
+/* Artist Card & Images Responsive */
 
+@media screen and (max-width: 1000px) {
+  .container-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 50%;
+    margin: 10px;
+      
+  }
+}
 
+ @media screen and (max-width: 600px) {
+  .container-images {
+  flex-direction: column;
+
+  }
+
+  
+
+}
+
+/*
+column-gap: 20px;
+  row-gap: 100px;
+  margin: 38px; 
+  */
 
 /* EATING & SLEEPING PAGE */
 
