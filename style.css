@@ -4,6 +4,7 @@
 * {
     padding: 0;
     margin:  0;
+    box-sizing: border-box;
 }
 
     /* basic format / style */
@@ -280,22 +281,26 @@ nav a:hover {
 /* event date and small cards */
        .events-title {
         padding: 1.5em;
-        background: #4A5A5A;
         color: white;
         position: relative;
         margin: 10px;
-        width: 255px;
         height: 5px;
         line-height: 8px;
         font-size: 13px;
         z-index: 0;
     }
 
+    .events-title h2 {
+      background: #4A5A5A;
+      width: 300px;
+      padding: 1em;
+    }
+
        .container-events {
         display: flex;
         justify-content: center;
         flex: 25%;
-        margin: 10px;
+        margin: 40px;
     }
 
     .container-events h2 {
@@ -312,7 +317,7 @@ nav a:hover {
        }
 
        .events-card img {
-            width:100%;
+            width:295px;
             height: 172px;
            object-fit:cover;
        }
@@ -447,22 +452,24 @@ nav a:hover {
     line-height: 40px;
   }
 
+ 
+
   .container-images a {
-    display: flex;
-    padding: 10px 15px;
     margin-top: 20px;
-    width: 90px;
+    padding: 10px 15px;
     border: 2pt solid #639D9D;
+    width: 150px;
     background: #639D9D;
     color: white;
     font-weight: bold;
     text-decoration: none;
+    display: block;
+    text-align: center;
   }
 
   .container-images a:hover {
-    padding: 10px 15px;
-    margin-top: 20px;
-    border: 2pt solid #639D9D;
+   
+    /* border: 2pt solid #639D9D; */
     background: white;
     color: #639D9D;
 }
