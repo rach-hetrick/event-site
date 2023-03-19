@@ -330,11 +330,14 @@ nav a:hover {
             flex-wrap: wrap;
             flex: 50%;
             margin: 10px;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .events-title {
             padding: 1.5em;
         }
+
+      
       }
 
        @media screen and (max-width: 600px) {
@@ -418,8 +421,13 @@ nav a:hover {
     gap: 1em;
   }
 
+  card column-span-2 card-dark {
+    max-width: 650px;
+  }
+
   .container-images div {
       flex: 1;
+      max-width: 650px;
   }
   
  
@@ -428,14 +436,17 @@ nav a:hover {
     color: white;
     padding: 2em;
     line-height: 1.3em;
+    max-width: 650px;
   }
 
   .card p {
     line-height: 25px;
+    max-width: 400px;
   }
 
 .card-image div {
     height: 50%;
+    max-width: 400px;
 }
 
 .card-image div:first-child {
@@ -446,10 +457,12 @@ nav a:hover {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      max-width: 400px;
   }
 
   .profile h3 {
     line-height: 40px;
+    max-width: 400px;
   }
 
  
@@ -476,19 +489,24 @@ nav a:hover {
 
 /* Artist Card & Images Responsive */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .container-images {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 50%;
-    margin: 10px;
-      
+    
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 10px;  
   }
+
+  .container-images div {
+    max-width: 464px;
 }
 
- @media screen and (max-width: 600px) {
+}
+
+ @media screen and (max-width: 800px) {
   .container-images {
-  flex-direction: column;
+    display:block;
+    margin: auto;
 
   }
 
