@@ -857,6 +857,8 @@ footer img {
     font-size: 25px;
     color: white;
     line-height: 35px;
+    text-align: right;
+    justify-content: right;
 }
 
 .get-connected {
